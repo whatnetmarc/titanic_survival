@@ -13201,7 +13201,7 @@ JEnZM9RKkiQpe4ZaSZIkZc9QK0mSpOwZaiVJkpQ9Q60kSZKyZ6iVJElS9gy1kiRJyp6hVpIkSdkz
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[146]:</div>
+<div class="prompt input_prompt">In&nbsp;[352]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">predictions_2</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
@@ -13217,7 +13217,7 @@ JEnZM9RKkiQpe4ZaSZIkZc9QK0mSpOwZaiVJkpQ9Q60kSZKyZ6iVJElS9gy1kiRJyp6hVpIkSdkz
         <span class="c1"># and write your prediction conditions here</span>
         <span class="c1"># 输入你自己的预测条件</span>
         <span class="k">if</span> <span class="n">passenger</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;male&#39;</span><span class="p">:</span>  <span class="c1"># 如果是男性</span>
-            <span class="k">if</span> <span class="n">passenger</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">10</span> <span class="p">:</span>
+            <span class="k">if</span> <span class="n">passenger</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="p">:</span>
                 <span class="n">predictions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">predictions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
@@ -13252,7 +13252,7 @@ JEnZM9RKkiQpe4ZaSZIkZc9QK0mSpOwZaiVJkpQ9Q60kSZKyZ6iVJElS9gy1kiRJyp6hVpIkSdkz
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[147]:</div>
+<div class="prompt input_prompt">In&nbsp;[353]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">outcomes</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
@@ -13268,7 +13268,7 @@ JEnZM9RKkiQpe4ZaSZIkZc9QK0mSpOwZaiVJkpQ9Q60kSZKyZ6iVJElS9gy1kiRJyp6hVpIkSdkz
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Predictions have an accuracy of 79.24%.
+<pre>Predictions have an accuracy of 79.35%.
 </pre>
 </div>
 </div>
@@ -13282,7 +13282,7 @@ JEnZM9RKkiQpe4ZaSZIkZc9QK0mSpOwZaiVJkpQ9Q60kSZKyZ6iVJElS9gy1kiRJyp6hVpIkSdkz
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>回答</strong>: <em>Predictions have an accuracy of 79.24%.</em></p>
+<p><strong>回答</strong>: <em>Predictions have an accuracy of 79.35%.</em></p>
 
 </div>
 </div>
@@ -13797,7 +13797,7 @@ Sdmz1EqSJCl7/wcV9BPw6CT6jwAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>回答</strong>: <em>Predictions have an accuracy of 82.83%.</em></p>
+<p><strong>回答</strong>: <em>Predictions have an accuracy of 82.94%.</em></p>
 <ol>
 <li>观察的特征包括 Sex/Parch/Pclass/SibSp/Age/Fare</li>
 <li>某些条件会更有效，目前最有效的特征是性别，其次Pclass与Age也比较有效。</li>
